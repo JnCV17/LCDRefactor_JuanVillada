@@ -66,7 +66,7 @@ public class InputController {
      *
      * @param cadena Cadena
      */
-    static boolean isNumeric(String cadena) {
+    public static boolean isNumeric(String cadena) {
         try {
             Integer.parseInt(cadena);
             return true;

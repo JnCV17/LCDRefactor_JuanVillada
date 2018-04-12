@@ -28,20 +28,9 @@ public class Digito {
         segmentos.put(9, new char[]{Segmento.A, Segmento.B, Segmento.C, Segmento.F, Segmento.G});
     }
 
-    //Tamaño de cada segmento del digito
-    private int tamañoSegmento;
-
-    //Altura del digito = tamañoSegmento * 2 + 3
-    private int altura;
-
-    //Anchura del digito = tamañoSegmento + 2
-    private int anchura;
-
     //Lista de caracteres que corresponden a los segmentos que se mostraran en el display
     private char[] segmentosDisplay;
 
-    //Matriz de caracteres que representa el digito
-    private char[][] matrizDigitos;
 
     /**
      * Constructor para la clase Digito
@@ -49,42 +38,13 @@ public class Digito {
      * @param digito   Numero entero entre 0 y 9
      * @param tamañoSegmento Numero entero entre 0 y 9 que indica el tamaño de los segmentos de digitos
      */
-    public Digito(int digito, int tamañoSegmento) {
-        this.tamañoSegmento = tamañoSegmento;
-        altura = 2 * tamañoSegmento + 3;
-        anchura = tamañoSegmento + 2;
+    public Digito(int digito) {
         segmentosDisplay = segmentos.get(digito);
-    }
-
-
-    public int getTamañoSegmento() {
-
-        return tamañoSegmento;
     }
 
     public char[] getSegmentosDisplay() {
 
         return segmentosDisplay;
-    }
-
-    public char[][] getMatrizDigitos() {
-
-        return matrizDigitos;
-    }
-
-    public void setMatrizDigitos(char[][] matrizDigitos) {
-
-        this.matrizDigitos = matrizDigitos;
-    }
-
-    public int getAltura() {
-
-        return altura;
-    }
-
-    public int getAnchura() {
-
-        return anchura;
     }
 
 }

@@ -17,17 +17,4 @@ public class Segmento {
     
     public static final String POSICION_X = "X";
     public static final String POSICION_Y = "Y";
-
-    //Representa la orientacion del segmento
-    private int orientacion;
-
-    public int getOrientacion() {
-
-        return orientacion;
-    }
-
-    public void setOrientacion(int orientacion) {
-
-        this.orientacion = orientacion;
-    }
 }

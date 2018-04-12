@@ -91,7 +91,7 @@ public class LCDDisplayController {
             
             int numero = Integer.parseInt(String.valueOf(digito));
             
-            Digito nuevoDigito = new Digito(numero, size);
+            Digito nuevoDigito = new Digito(numero);
 
             digitos.add(nuevoDigito);
         }
